@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reset Password</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(235, 232, 232);
+        text-align: justify;
+        font-size: 16px;
+        font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      }
+      
+      .hr {
+        background-color: rgb(219, 223, 226);
+        height: 1px;
+        margin: 10px 0px;
+      }
+      .header {
+        height: 54px;
+      }
+      .footer {
+        height: 70px;
+      }
+      .main {
+        max-width: 460px;
+        background-color: white;
+        border-radius: 5px;
+        padding: 10px 40px 10px;
+      }
+      .container{
+        padding: 0px 20px;
+      }
+      .img {
+        width: 165px;
+      }
+      /*instructions*/
+      .reset-div {
+        padding: 0px 32px;
+        display: flex;
+        flex-direction: column;
+        /* row-gap: 5px; */
+        .step{
+            margin-bottom: 10px;
+        }
+      }
+      .reset-button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+      .reset-button {
+        display: flex;
+        border-color: aliceblue;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        width: 85%;
+        height: 42px;
+        background-color: #ff6229;
+        padding: 20px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 18px;
+        border: 0px;
+      }
+      .reset-button:hover {
+        background-color: #f34c0f;
+      }
+      /*footer*/
+      .footer {
+        .content {
+          margin-top: -2px;
+        }
+      }
+      p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <header class="header">
+          <img src="assets/images/logo.png" alt="logo" class="img" />
+        </header>
+        <div class="hr"></div>
+        <div class="content">
+          <div class="details">
+            <p>
+              Dear <strong>[Cient's first name]</strong
+              ><strong>[Client's last name],</strong>
+            </p>
+            <p>
+              We have received a request to reset your password for
+              <strong>[Cient's first name]</strong
+              ><strong>[Client's last name]</strong>. To ensure the security of
+              your account, please follow the instructions bellow to reset your
+              password:
+            </p>
+            <div class="reset-div">
+              <div class="step">
+                1. Click the following Reset divassword button to reset your
+                password.
+              </div>
+              <div>
+                2. Once you have accessed the password reset page, you will be
+                prompted to enter a new passoword for your account.
+              </div>
+              <div class="reset-button-container">
+                <button class="reset-button">Reset password</button>
+              </div>
+            </div>
+            <div>
+              <p>
+                If you did not initiate this password reset request, please
+                disregard this email. Your account security is important to us
+                and we recommend receiving your account activity for any
+                suspicious behavior.
+              </p>
+              <p>Thank you for your attention to this matter.</p>
+              <div>
+                Best regards,<br />
+                <strong>Petcare System.</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <footer class="footer">
+          <p class="content">
+            Petcare, TMA Building, Tan Chanh Hiep Ward, District 12, Ho Chi Minh
+            City.
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
