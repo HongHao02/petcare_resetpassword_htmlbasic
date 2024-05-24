@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Reset Password</title>
+    <style>
+      @font-face {
+        font-family: "Baloo Bhaina 2";
+        font-style: normal;
+        font-weight: 800;
+        src: url("https://fonts.gstatic.com/s/baloobhaina2/v14/wXK1E3kTposypRydzUxCSsL1BBJ7_PxO.woff2")
+          format("woff2");
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(235, 232, 232);
+        text-align: justify;
+        font-size: 16px;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .hr {
+        background-color: rgb(219, 223, 226);
+        height: 1px;
+        margin: 10px 0px;
+      }
+
+      .logo {
+        font-size: 46px;
+        height: 60px;
+        font-weight: 800;
+      }
+
+      .logo .pet {
+        color: #002060;
+      }
+
+      .logo .care {
+        color: #58a44c;
+      }
+
+      .footer {
+        height: 60px;
+      }
+
+      .main {
+        width: 460px;
+        background-color: white;
+        border-radius: 5px;
+        padding: 10px 40px 10px;
+      }
+
+      .container {
+        padding: 0px 20px;
+      }
+
+      .img {
+        width: 165px;
+      }
+
+      .reset-div {
+        padding: 0px 0px 0px 30px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .reset-div .step {
+        margin-bottom: 10px;
+      }
+
+      .reset-button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+      .reset-button {
+        display: flex;
+        border-color: aliceblue;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        width: 66.5%;
+        height: 0px;
+        background-color: #ff6229;
+        padding: 20px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 18px;
+        border: 0px;
+      }
+      .reset-button:hover {
+        background-color: #f34c0f;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .footer .item {
+        width: 48%;
+      }
+
+      .footer .item-1 {
+        margin-left: 3px;
+      }
+
+      .footer .item-2 {
+        text-align: end;
+      }
+
+      p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <header class="logo"  style="font-family: 'Baloo Bhaina 2', Arial, sans-serif;">
+          <span class="pet">Pet</span><span class="care">Care</span>
+        </header>
+        <div class="hr"></div>
+        <div class="content">
+          <div class="details">
+            <p>
+              Dear <strong>[Client_FirstName]</strong>
+              <strong>[Client_LastName],</strong>
+            </p>
+            <p>
+              We have received a request to reset your password for
+              <strong>[Client_FirstName]</strong>
+              <strong>[Client_LastName]</strong>. To ensure the security of your
+              account, please follow the instructions below to reset your
+              password:
+            </p>
+            <div class="reset-div">
+              <div class="step">
+                1. Click the following Reset password button to reset your
+                password.
+              </div>
+              <div>
+                2. Once you have accessed the password reset page, you will be
+                prompted to enter a new password for your account.
+              </div>
+            </div>
+            <div class="reset-button-container">
+              <a href="[Reset_Password_Link]" class="reset-button"
+                >Reset password</a
+              >
+            </div>
+            <div>
+              <p>
+                If you did not initiate this password reset request, please
+                disregard this email. Your account security is important to us
+                and we recommend reviewing your account activity for any
+                suspicious behavior.
+              </p>
+              <p>Thank you for your attention to this matter.</p>
+              <div>
+                Best regards,<br />
+                Petcare System.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <footer class="footer">
+          <div class="item">
+            <i class="fa-solid fa-location-dot item-1"></i>
+            <span class="item-1">Petcare, District 12, HCM.</span>
+          </div>
+          <div class="item item-2">
+            <i class="fa-solid fa-phone"></i> (+84) 900-123-456
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
