@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -18,10 +18,23 @@
     />
     <title>Reset Password</title>
     <style>
+      /* @font-face {
+        font-family: "Baloo Bhaina 2";
+        font-style: normal;
+        font-weight: 400;
+        src: url("https://fonts.gstatic.com/s/baloobhaina2/v14/wXK1E3kTposypRydzUxCSsL1BBJ7_PxO.woff2")
+          format("woff2");
+      } */
+      /* @font-face {
+        font-family: "Baloo Bhaina 2";
+        src: url(https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&display=swap)
+          format("woff2");
+        font-weight: bold;
+      } */
       @font-face {
         font-family: "Baloo Bhaina 2";
         font-style: normal;
-        font-weight: 800;
+        font-weight: 400;
         src: url("https://fonts.gstatic.com/s/baloobhaina2/v14/wXK1E3kTposypRydzUxCSsL1BBJ7_PxO.woff2")
           format("woff2");
       }
@@ -76,10 +89,11 @@
         padding: 10px 40px 10px;
       }
 
+      /* checked */
       .container {
         padding: 0px 20px;
       }
-
+      /* checked */
       .img {
         width: 165px;
       }
@@ -101,6 +115,7 @@
         margin-top: 15px;
         margin-bottom: 5px;
       }
+      /* checked */
       .reset-button {
         display: flex;
         border-color: aliceblue;
@@ -116,6 +131,7 @@
         font-size: 18px;
         border: 0px;
       }
+
       .reset-button:hover {
         background-color: #f34c0f;
       }
@@ -136,6 +152,7 @@
         margin-left: 3px;
       }
 
+      /* checked */
       .footer .item-2 {
         text-align: end;
       }
@@ -198,8 +215,14 @@
               account, please follow the instructions below to reset your
               password:
             </p>
-            <div class="reset-div">
-              <div class="step">
+            <div
+              style="
+                padding: 0px 0px 0px 30px;
+                display: flex;
+                flex-direction: column;
+              "
+            >
+              <div style="margin-bottom: 10px">
                 1. Click the following Reset password button to reset your
                 password.
               </div>
@@ -208,7 +231,15 @@
                 prompted to enter a new password for your account.
               </div>
             </div>
-            <div class="reset-button-container">
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 15px;
+                margin-bottom: 5px;
+              "
+            >
               <a
                 href="[Reset_Password_Link]"
                 style="
