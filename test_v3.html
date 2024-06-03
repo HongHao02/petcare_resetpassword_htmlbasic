@@ -166,8 +166,6 @@
   </head>
   <body
     style="
-      display: flex;
-      justify-content: center;
       background-color: rgb(235, 232, 232);
       text-align: justify;
       font-size: 16px;
@@ -232,35 +230,33 @@
               </div>
             </div>
             <div
-              style="
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 15px;
-                margin-bottom: 5px;
-              "
+              style="margin-top: 15px; margin-bottom: 5px; text-align: center"
             >
               <a
                 href="[Reset_Password_Link]"
                 style="
                   text-decoration: none;
-                  display: flex;
-                  border-color: aliceblue;
-                  align-items: center;
-                  justify-content: center;
-                  color: white;
+                  display: inline-block;
                   width: 66.5%;
-                  height: 0px;
-                  background-color: #ff6229;
-                  padding: 20px;
-                  border-radius: 10px;
-                  font-weight: 600;
-                  font-size: 18px;
-                  border: 0px;
                 "
-                >Reset password</a
               >
+                <button
+                  style="
+                    background-color: #ff6229;
+                    border-radius: 10px;
+                    color: white;
+                    padding: 10px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    border: 0px;
+                    width: 100%;
+                  "
+                >
+                  Reset Password
+                </button>
+              </a>
             </div>
+
             <div>
               <p style="margin-top: 10px; margin-bottom: 10px">
                 If you did not initiate this password reset request, please
@@ -285,20 +281,10 @@
             margin: 10px 0px;
           "
         ></div>
-        <footer
-          style="
-            height: 60px;
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-          "
-        >
-          <div style="width: 48%">
-            <i class="fa-solid fa-location-dot item-1"></i>
-            <span style="margin-left: 3px">Petcare, District 12, HCM.</span>
-          </div>
-          <div style="text-align: end; width: 48%">
-            <i class="fa-solid fa-phone"></i> (+84) 900-123-456
+        <footer style="height: 60px; width: 100%">
+          <div style="width: 48%; float: left">Petcare, District 12, HCM.</div>
+          <div style="width: 48%; float: right; text-align: end">
+            (+84) 900-123-456
           </div>
         </footer>
       </div>
